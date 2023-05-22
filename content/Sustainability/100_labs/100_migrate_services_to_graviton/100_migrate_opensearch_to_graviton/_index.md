@@ -44,12 +44,6 @@ AWS Graviton instances offer the following benefits:
 You can benefit from these optimizations with minimal effort by provisioning or migrating your OpenSearch Service instances to Graviton.
 
 
-
-<!--
-Amazon OpenSearch Service Graviton2 instances provide up to 44% price/performance improvement over previous generation instances.
-
-Graviton2 instances include support for all recently launched features like encryption at rest and in flight, role-based access control, cross-cluster search, Auto-Tune, Trace Analytics, Kibana Reporting, and UltraWarm. The AWS Graviton2 instance family also includes several new performance optimizations, such as larger caches per core, higher Amazon Elastic Block Store (Amazon EBS) throughput than comparable x86 instances, fully encrypted RAM, and many others. You can benefit from these optimizations with minimal effort by provisioning or migrating your OpenSearch Service instances today. -->
-
 ## Goals
 
 At the end of this lab you will:
@@ -57,27 +51,6 @@ At the end of this lab you will:
 * Understand how to upgrade an existing Amazon OpenSearchService Cluster so it is compatible with Graviton instances.
 * Have practical hands on experience migrating an Amazon OpenSearchService Cluster from x86-64 based instances to Graviton with minimal downtime.
 * Learn how to roll back to previous instance types if compatibility issues are discovered.
-
-<!--
-In this workshop module, we’ll start by creating a cluster running on x86-based processors, and then we’ll upgrade it to Graviton2-based instances accomplishing this with minimal downtime. In order to minimize downtime while upgrading the instance type to a Graviton2-based one, Amazon OpenSearch Service deploys a new cluster, and shifts traffic to it once it is ready. This is called a Blue/Green deployment strategy, and is a common technique to minimize or avoid downtime when deploying new software versions. While the change takes place, you will still be able to read from and write to the cluster.
-
-We will walk through the following steps:
-
-* Upgrade an existing Amazon OpenSearch Service cluster (if needed):
-    * Determine if the current cluster version meets the minimum required version (7.9 or later) for moving to Graviton2.
-    * Upgrade the Amazon OpenSearch Service domain to the required minimum version.
-* Modify the instance type of your cluster nodes to use Graviton
-* Confirm that your applications work correctly with the upgraded cluster.
-* Roll back to the previous instance types if compatibility issues are discovered.
-
-
-* Create a sample Amazon OpenSearch Service cluster (called a domain) with version 7.9
-* Cluster will include 3 data nodes and 2 primary nodes of the m5.large.elasticsearch instance type, which is an x86-based instance
-* Modify the instance type of your cluster nodes
-* Confirm that your applications work correctly with the upgraded cluster
-* Roll back to the previous instance types if compatibility issues are discovered
-
--->
 
 
 
